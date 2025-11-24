@@ -70,7 +70,7 @@ header {
 
 .link-item {
     background-color: #b7bdc5;
-    margin: 10px; 
+    /* margin: 10px auto 10px auto;  */
     padding: 15px;
 }
 
@@ -88,7 +88,7 @@ header {
 }
 
 .imagem-item {
-    height: 28vh;
+    height: 25vh;
 }
 
 .item {
@@ -116,4 +116,28 @@ form {
 .mini-img {
     width: 1vw;
     border-radius: 50px;
+}
+
+table {
+    margin: 0 auto 0 auto;
+    border-collapse: collapse;
+    border:solid black;
+    width: 90%;
+    text-align: center;
+    background-color: #292929;
+    font-size: 1vw;
+}
+
+thead {
+    border: 0.3vw solid black;
+    background-color: #9e4a4a;
+    font-size: 1.5vw;
+}
+
+th, td {
+    padding: 0.5vh;
+}
+
+footer {
+    font-size: 1vw;
 }
