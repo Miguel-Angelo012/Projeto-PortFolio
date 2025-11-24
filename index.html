@@ -212,13 +212,13 @@
                         <form action="/enviar_dados" method="post">
                             
                             <label for="name">Nome:</label>
-                            <input type="text" name="name" id="name"><br><br>
+                            <input class="input" type="text" name="nome" id="name"><br><br>
 
                             <label for="mail">Email:</label>
                             <input class="input" type="email" id="mail" name="mail" required><br><br>
 
                             <label for="assunto">Assunto:</label><br>
-                            <select id="assunto" name="assunto">
+                            <select class="input" id="assunto" name="assunto" required >
                                 <option value="">-</option>
                                 <option value="reclamacao">Reclamação</option>
                                 <option value="feedback">Feedback</option>
@@ -226,10 +226,10 @@
                             </select><br><br>
 
                             <label for="mensagem">Mensagem:</label><br>
-                            <textarea id="mensagem" name="mensagem" rows="10" cols="87"></textarea><br><br>
+                            <textarea class="input" id="mensagem" name="mensagem" rows="10" cols=67"></textarea><br><br>
                             
-                            <input type="submit" id="enviar">
-                            <input type="reset" id="redefinir">
+                            <input class="input" type="submit" id="enviar">
+                            <input class="input" type="reset" id="redefinir">
                         </form>
                     </div>
                 </section>
@@ -246,13 +246,13 @@
                 </div>
             </aside>
 
-            <footer id="footer" class="sessao">
+            <footer>
                 <ul>
-                    <li>Email: miguellimacmj@gmail.com</li>
-                    <li>Celular: (85) 9 9284-1247</li>
-                    <li>Github: Miguel-Angelo012</li>
-                    <li>Steam: Strawberry</li>
-                    <li>Pinterest: @morangotang0</li>
+                    <li> <img class="mini-img" src="img/mail.avif"> Email: miguellimacmj@gmail.com</li><br>
+                    <li> <img class="mini-img" src="img/wattsap.avif"> Celular: (85) 9 9284-1247</li><br>
+                    <li> <img class="mini-img" src="img/github.png"> Github: Miguel-Angelo012</li><br>
+                    <li> <img class="mini-img" src="img/steam.jpg"> Steam: Strawberry</li><br>
+                    <li> <img class="mini-img" src="img/pinterest.png"> Pinterest: @morangotang0</li>
                 </ul>
             </footer>
         </div>
