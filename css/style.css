@@ -1,103 +1,19 @@
+/* Partes Brutas HTML */
+
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif ;
-    background-image: url(../img/fundo.jpg);
+    background-image: url(../img/fundo.gif);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     color: #fff;
 }
 
-figcaption {
-    font-size: 1vw;
-}
-
-.sessao{
-    margin: 2vw;
-    background-color: #414141;
-}
-
-.cont-sessao {
-    padding: 2vw;
-}
-
-.sec-nomes {
-    text-align: center;
-    background-color: #9e4a4a;
-    margin: 0;
-    padding: 0.5vw;
-    font-size: 2vw;
-}
-
-.ter-nomes {
-    font-size: 1.5vw;
-}
-
-.container {
-    background-color: #292929;
-    margin: 0 20vw 0 20vw;
-    padding: 1vw;
-}
-
-.texto {
-    font-size: 1vw;
-    text-align: justify;
-}
-
 header {
     display: flex;
     padding: 10px;
-}
-
-#fotoperfil {
-    width: 15vw;
-    height: 35vh;
-}
-
-#nome {
-    font-size: 2.5vw;
-}
-
-#links {
-    display: flex;
-    flex-wrap: wrap;
-    width: 300px;
-    justify-content: center;
-    font-size: 1vw;
-    gap: 10px;
-}
-
-.link-item {
-    background-color: #b7bdc5;
-    /* margin: 10px auto 10px auto;  */
-    padding: 15px;
-}
-
-.lista-item {
-    background-color: #292929;
-    text-align: center;
-    border-radius: 10px;
-}
-
-.titulo-item {
-    border-radius: 10px 10px 0 0;
-    padding: 0.5vw;
-    font-size: 1.5vw;
-    background-color: #9e4a4a;
-}
-
-.imagem-item {
-    height: 25vh;
-}
-
-.item {
-    display: flex;
-    padding-right: 2vw;
-}
-
-.item-projet {
-    padding: 0 1vw 3vh 1vw;
 }
 
 form {
@@ -108,14 +24,8 @@ form {
     border-radius: 10px;
 }
 
-.input {
+figcaption {
     font-size: 1vw;
-    border: none;
-}
-
-.mini-img {
-    width: 1vw;
-    border-radius: 50px;
 }
 
 table {
@@ -135,9 +45,124 @@ thead {
 }
 
 th, td {
-    padding: 0.5vh;
+    padding: 0.5vw;
 }
 
 footer {
     font-size: 1vw;
 }
+
+/* IDs */
+
+#fotoperfil {
+    width: 15vw;
+    height: 35vh;
+}
+
+#nome {
+    font-size: 2.5vw;
+}
+
+#links {
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    gap: 10px;
+}
+
+/* Classes */
+
+/*  - Containers - */
+    .container {
+        background-color: #292929;
+        margin: 0 20vw 0 20vw;
+        padding: 1vw;
+    }
+
+    .sessao{
+        margin: 2vw;
+        background-color: #414141;
+    }
+
+    .cont-sessao {
+        padding: 2vw;
+    }
+
+/*  - Titulos - */
+    .sec-nomes {
+        text-align: center;
+        background-color: #9e4a4a;
+        margin: 0;
+        padding: 0.5vw;
+        font-size: 2vw;
+    }
+
+    .ter-nomes {
+        font-size: 1.5vw;
+    }
+
+/* - Botão - */
+    .box{
+        width: 7vw;
+        height: 5vh;
+        background-color: #684949;
+        border-style: none;
+        cursor: pointer;
+    }
+
+    .box:hover{
+        background-color: #9e4a4a;
+    }
+
+/* - Parágrafos - */
+    .texto {
+        font-size: 1vw;
+        text-align: justify;
+    }
+
+/* - Links - */
+
+    .link-item {
+        margin: 5px;
+        font-size: 1vw;
+        text-align: center;
+    }
+
+/* - Lista - */
+    .lista-item {
+        background-color: #292929;
+        text-align: center;
+        border-radius: 10px;
+    }
+
+    .titulo-item {
+        border-radius: 10px 10px 0 0;
+        padding: 0.5vw;
+        font-size: 1.5vw;
+        background-color: #9e4a4a;
+    }
+
+    .imagem-item {
+        height: 25vh;
+    }
+
+    .item {
+        display: flex;
+        padding-right: 2vw;
+    }
+
+    .item-projet {
+        padding: 0 1vw 3vh 1vw;
+    }
+
+/* - Inputs - */
+    .input {
+        font-size: 1vw;
+        border: none;
+    }
+
+/* - Footer imagens - */
+    .mini-img {
+        width: 1vw;
+        border-radius: 50px;
+    }
