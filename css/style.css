@@ -8,7 +8,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    color: #ebe6fa;
+    color: #E8EDFF;
 }
 
 header {
@@ -19,7 +19,7 @@ header {
 form {
     margin: 2vw;
     padding: 3vw;
-    background-color: #211c44;
+    background-color: #150f2c;
     font-size: 1.2vw;
     border-radius: 10px;
 }
@@ -29,34 +29,42 @@ figcaption {
 }
 
 table {
-    margin: 0 auto 0 auto;
-    border-collapse: collapse;
-    border:solid black;
+    margin: auto;
+    border-radius: 15px;
+    border: 2px solid #344686;
     width: 90%;
     text-align: center;
-    background-color: #211c44;
+    background-color: #150f2c;
     font-size: 1vw;
+    overflow: hidden; 
+    border-collapse: separate; 
+    border-spacing: 0;
 }
 
 thead {
     border: 0.3vw solid black;
-    background-color: #7286f7;
+    background-color: #344686;
     font-size: 1.5vw;
 }
 
 th, td {
     padding: 0.5vw;
+    border-bottom: 1px solid #344686;
 }
 
 footer {
     font-size: 1vw;
 }
 
+ul {
+    list-style: none;
+}
+
 /* IDs */
 
 #fotoperfil {
-    width: 15vw;
-    height: 35vh;
+    width: 14vw;
+    border-radius: 15px;
 }
 
 #nome {
@@ -66,7 +74,7 @@ footer {
 #links {
     display: flex;
     flex-wrap: wrap;
-    width: 400px;
+    max-width: auto;
     gap: 10px;
 }
 
@@ -74,14 +82,15 @@ footer {
 
 /*  - Containers - */
     .container {
-        background-color: #211c44;
+        background: #07070D;
+        background: linear-gradient(170deg, rgba(7, 7, 13, 1) 0%, rgba(40, 56, 116, 1) 50%, rgba(7, 7, 13, 1) 100%);
         margin: 0 20vw 0 20vw;
         padding: 1vw;
     }
     
     .sessao{
         margin: 2vw;
-        background-color: #2a2356;
+        background-color: #07070D;
     }
 
     .cont-sessao {
@@ -91,7 +100,7 @@ footer {
 /*  - Titulos - */
     .sec-nomes {
         text-align: center;
-        background-color: #7286f7;
+        background-color: #283874;
         margin: 0;
         padding: 0.5vw;
         font-size: 2vw;
@@ -105,7 +114,7 @@ footer {
     .box{
         width: 7vw;
         height: 5vh;
-        background-color: #7286f7;
+        background-color: #344686;
         border-style: none;
         border-radius: 10px;
         color: #ebe6fa;
@@ -113,9 +122,23 @@ footer {
     }
 
     .box:hover{
-        background-color: #8194ff;        
+        background-color: #a6b3ff;        
     }
 
+    .box-perf {
+        width: 300px;
+        height: 5vh;
+        padding: 0 1vw 0 1vw;
+        background-color: #344686;
+        border-style: none;
+        border-radius: 10px;
+        color: #ebe6fa;
+        cursor: pointer;
+    }
+
+    .box-perf:hover{
+        background-color: #a6b3ff;
+    }
 /* - Parágrafos - */
     .texto {
         font-size: 1vw;
@@ -132,20 +155,22 @@ footer {
 
 /* - Lista - */
     .lista-item {
-        background-color: #191433;
+        background-color: #150f2c;
         text-align: center;
         border-radius: 10px;
+        margin-bottom: 10px;
     }
 
     .titulo-item {
         border-radius: 10px 10px 0 0;
         padding: 0.5vw;
         font-size: 1.5vw;
-        background-color: #687eff;
+        background-color: #344686;
     }
 
     .imagem-item {
         height: 25vh;
+        border-radius: 15px;
     }
 
     .item {
@@ -159,8 +184,10 @@ footer {
 
 /* - Inputs - */
     .input {
+        color: #fff;
         font-size: 1vw;
         border: none;
+        background-color: #07070D;
     }
 
 /* - Footer imagens - */
@@ -168,16 +195,3 @@ footer {
         width: 1vw;
         border-radius: 50px;
     }
-
-
-.paleta {
-    color: #93edf8;
-    color: #6ce9f8;
-    color: #c3f1f9;
-    color: #283874;
-    color: #4e54cc;
-    color: #4e4fb2;
-    color: rgb(116, 93, 243);
-    color: #ccbff6;
-    color: #7286f7;
-}
