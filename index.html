@@ -9,30 +9,26 @@
     <body>
         <div class="container">
             <header>
-                <figure>
-                    <img id="fotoperfil" src="img/fotoperfil.jpg"> <!--Imagem sua-->
-                </figure>
+                <img id="fotoperfil" src="img/fotoperfil.jpg">
 
-                <div>
+                <div id="info">
                     <h1 id="nome">Miguel Ângelo</h1>
 
-                    <div id="links">
-                        <nav>
-                            <a href="#sobremim"><button class="box-perf link-item">Sobre mim</button></a>
-                            <a href="#projetos"><button class="box-perf link-item">Projetos</button></a>
-                            <a href="#hab"><button class="box-perf link-item">Habilidades</button></a>
-                            <a href="#contats"><button class="box-perf link-item">Contatos</button></a>
-                        </nav>
-                    </div>
+                    <nav id="links">
+                        <a href="#sobremim"><button class="box">Sobre mim</button></a>
+                        <a href="#projetos"><button class="box">Projetos</button></a>
+                        <a href="#hab"><button class="box">Habilidades</button></a>
+                        <a href="#contats"><button class="box">Contatos</button></a>
+                    </nav>
                     
                 </div>
             </header>
 
             <main>
-                <section id="sobremim" class="sessao">
+                <section id="sobremim">
                         <h1 class="sec-nomes">Sobre mim:</h1>
                         
-                        <div class="cont-sessao">
+                        <div class="sessao">
                             <p class="texto">Olá, me chamo Miguel Ângelo Lima de Sousa, nasci em Maracanaú em 16/02/2009, moro em Fortaleza no bairro Presidente Vargas junto de minha mãe Patrícia Lima, meu pai Cicero Robert e meus irmãos Carlos Eduardo, João Gabriel e Ana Luisa. Eu estudei no Colégio Castro Alves do infântil até o 8º ano, depois, estudei o meu 9º ano em uma escola pública. Após concluir o meu ensino fundamental, comecei o meu ensino médio em 2024 no Campus Maranguápe, onde meu irmão Eduardo estudava. Sou uma pessoa meio reservada, mas quando é pra ser sociavel, eu me abro de forma moderada.</p>
 
                             <h2 class="ter-nomes">Meus Hobbies:</h2>
@@ -42,7 +38,7 @@
 
                                     <div class="item">
                                         <figure>
-                                            <img class="imagem-item" src="img/soundcloud.webp"> <!--imagem do soundcloud-->
+                                            <img class="imagem-item" src="img/soundcloud.webp">
                                             <figcaption>Sound-Cloud</figcaption>
                                         </figure>
                                     
@@ -55,7 +51,7 @@
 
                                     <div class="item">
                                         <figure>
-                                            <img class="imagem-item" src="img/arenabreakout.webp"> <!--imagem arena breakout-->
+                                            <img class="imagem-item" src="img/arenabreakout.webp">
                                             <figcaption>Arena Breakout</figcaption>
                                         </figure>
 
@@ -68,7 +64,7 @@
 
                                     <div class="item">
                                         <figure>
-                                            <img class="imagem-item" src="img/fotopraia.jpg"> <!--imagem da praia-->
+                                            <img class="imagem-item" src="img/fotopraia.jpg">
                                             <figcaption>Foto da Praia</figcaption>
                                         </figure>
 
@@ -81,7 +77,7 @@
                                     
                                     <div class="item">
                                         <figure>
-                                            <img class="imagem-item" src="img/tomato.png"> <!--imagem do tomato-->
+                                            <img class="imagem-item" src="img/tomato.png">
                                             <figcaption>Tomato</figcaption>
                                         </figure>
 
@@ -92,17 +88,19 @@
                         </div>
                 </section>
 
-                <section id="projetos" class="sessao">
+                <section id="projetos">
                     <h1 class="sec-nomes">Meus Projetos</h1>
 
-                    <div class="cont-sessao">
+                    <div class="sessao">
                         <ul>
                             <li class="lista-item">
                                 <h2 class="titulo-item">POO-2025.2-TIP4 : 19/08/25 - 22/09/25</h2>
 
                                 <div class="item-projet">
                                     <p class="texto">Repositório do Github com o objetivo principal fornecer uma introdução clara e prática aos conceitos fundamentais da Programação Orientada a Objetos (POO). O material foi desenvolvido para estudantes que desejam aprofundar seu conhecimento em POO, utilizando a linguagem exemplos e códigos em Java.</p>
-                                    <a href="https://github.com/Miguel-Angelo012/POO-2025.2-TIP4"><button class="box link-item">Abrir</button></a>
+                                    <a href="https://github.com/Miguel-Angelo012/POO-2025.2-TIP4">
+                                        <button class="box">Abrir</button>
+                                    </a>
                                 </div>
                             </li>
 
@@ -111,25 +109,34 @@
 
                                 <div class="item-projet">
                                     <p class="texto">Repositório para projetos conluidos da disciplina Desenvolvimento Web 1.</p>
-                                    <a href="https://github.com/Miguel-Angelo012/Desenvolvimento_Web-Projetos"><button class="box link-item">Abrir</button></a>
+                                    <a href="https://github.com/Miguel-Angelo012/Desenvolvimento_Web-Projetos">
+                                        <button class="box">Abrir</button>
+                                    </a>
                                 </div>
                             </li>
+
                             <li class="lista-item">
                                 <h2 class="titulo-item">Desenvolvimento_Web-Tarefas : 09/09/25 - 14/09/25</h2>
 
                                 <div class="item-projet">
                                     <p class="texto">Repositório para tarefas concluidas da disciplina Desenvolvimento Web 1.</p>
-                                    <a href="https://github.com/Miguel-Angelo012/Desenvolvimento_Web-Tarefas"><button class="box link-item">Abrir</button></a>
+                                    <a href="https://github.com/Miguel-Angelo012/Desenvolvimento_Web-Tarefas">
+                                        <button class="box">Abrir</button>
+                                    </a>
                                 </div>
                             </li>
+
                             <li class="lista-item">
                                 <h2 class="titulo-item">Projeto-Landing-Pages : 21/10/25 - 04/11/25</h2>
 
                                 <div class="item-projet">
                                     <p class="texto">Projeto da disciplina Desenvolvimento Web 1, em dupla, com o objetivo de criar um Landing-Pages para o professor Roger Moura.</p>
-                                    <a href="https://miguel-angelo012.github.io/Projeto-Landing-Pages/"><button class="box link-item">Abrir</button></a>
+                                    <a href="https://miguel-angelo012.github.io/Projeto-Landing-Pages/">
+                                        <button class="box">Abrir</button>
+                                    </a>
                                 </div>
                             </li>
+
                             <li class="lista-item">
                                 <h2 class="titulo-item">Projeto Final de POO 2025.2 : 04/08/25 - Ainda em execução</h2>
 
@@ -137,6 +144,7 @@
                                     <p class="texto">Projeto Final da disciplina Programação Orientada a Objetos.</p>
                                 </div>
                             </li>
+
                             <li class="lista-item">
                                 <h2 class="titulo-item">PIBIC_JR : 01/09/25 - Ainda em execução</h2>
 
@@ -148,10 +156,10 @@
                     </div>
                 </section>
 
-                <section id="hab" class="sessao">
+                <section id="hab">
                     <h1 class="sec-nomes">Minhas Habilidades</h1>
 
-                    <div class="cont-sessao">
+                    <div class="sessao">
                         <table>
                             <thead>
                                 <tr>
@@ -202,26 +210,26 @@
                     </div>
                 </section>
 
-                <section id="contats" class="sessao">
+                <section id="contats">
                     <h1 class="sec-nomes">Contatos</h1>
 
-                    <div class="cont-sessao">
+                    <div class="sessao">
                         <form action="/enviar_dados" method="post">
                             
-                            <label for="name">Nome:</label><br>
-                            <input class="input" type="text" name="nome" id="name" required><br><br>
+                            <label for="name">Nome:</label>
+                            <input class="input text-a" type="text" name="nome" id="name" required>
 
-                            <label for="mail">Email:</label><br>
-                            <input class="input" type="email" id="mail" name="mail" required><br><br>
+                            <label for="mail">Email:</label>
+                            <input class="input text-a" type="email" id="mail" name="mail" required>
 
-                            <label for="assunto">Assunto:</label><br>
-                            <input class="input" type="text" name="assunto" id="assunto" required><br><br>
+                            <label for="assunto">Assunto:</label>
+                            <input class="input text-a" type="text" name="assunto" id="assunto" required>
 
-                            <label for="mensagem">Mensagem:</label><br>
-                            <textarea class="input" id="mensagem" name="mensagem" rows="10" cols="67"></textarea><br><br>
+                            <label for="mensagem">Mensagem:</label>
+                            <textarea class="input text-a" id="mensagem" name="mensagem" rows="10" cols="60"></textarea>
                             
-                            <input class="box input" type="submit" id="enviar">
-                            <input class="box input" type="reset" id="redefinir">
+                            <input class="box" type="submit" id="enviar">
+                            <input class="box" type="reset" id="redefinir">
                         </form>
                     </div>
                 </section>
@@ -229,11 +237,11 @@
 
             <footer>
                 <ul>
-                    <li> <img class="mini-img" src="img/mail.avif"> Email: miguellimacmj@gmail.com</li><br>
-                    <li> <img class="mini-img" src="img/wattsap.avif"> Celular: (85) 9 9284-1247</li><br>
-                    <li> <img class="mini-img" src="img/github.png"> Github: Miguel-Angelo012</li><br>
-                    <li> <img class="mini-img" src="img/steam.jpg"> Steam: Strawberry</li><br>
-                    <li> <img class="mini-img" src="img/pinterest.png"> Pinterest: @morangotang0</li>
+                    <li class="texto"> <img class="mini-img" src="img/mail.avif"> Email: miguellimacmj@gmail.com</li><br>
+                    <li class="texto"> <img class="mini-img" src="img/wattsap.avif"> Celular: (85) 9 9284-1247</li><br>
+                    <li class="texto"> <img class="mini-img" src="img/github.png"> Github: Miguel-Angelo012</li><br>
+                    <li class="texto"> <img class="mini-img" src="img/steam.jpg"> Steam: Strawberry</li><br>
+                    <li class="texto"> <img class="mini-img" src="img/pinterest.png"> Pinterest: @morangotang0</li>
                 </ul>
             </footer>
         </div>
