@@ -1,5 +1,3 @@
-/* Partes Brutas HTML */
-
 body {
     margin: 0;
     padding: 0;
@@ -11,31 +9,136 @@ body {
     color: #E8EDFF;
 }
 
-header {
-    display: flex;
-    padding: 10px;
+.container {
+    background: #07070D;
+    background: linear-gradient(170deg, rgba(7, 7, 13, 1) 0%, rgba(40, 56, 116, 1) 50%, rgba(7, 7, 13, 1) 100%);
+    margin: 0 300px 0 300px;
+    padding: 20px;
 }
 
-form {
-    margin: 2vw;
-    padding: 3vw;
+/* Header */
+
+header {
+    display: flex;
+    padding: 20px;
+}
+
+#fotoperfil {
+    max-width: 300px;
+    min-width: 50px;
+    border-radius: 15px;
+}
+
+#info {
+    margin-left: 30px;
+}
+
+#nome {
+    font-size: 40px;
+}
+
+#links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+/* Sessões */
+
+.sec-nomes {
+    text-align: center;
+    background-color: #283874;
+    margin: 0;
+    padding: 15px;
+    font-size: 40px;
+}
+
+.sessao {
+    padding: 40px;
+    margin-bottom: 30px;
+    background-color: #07070D;
+}
+
+.texto {
+    font-size: 20px;
+    text-align: justify;
+}
+
+.ter-nomes {
+    font-size: 30px;
+}
+
+ul {
+    list-style: none;
+} 
+
+.lista-item {
     background-color: #150f2c;
-    font-size: 1.2vw;
+    text-align: center;
     border-radius: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(52, 79, 134, 0.25);
+}
+
+.titulo-item {
+    border-radius: 10px 10px 0 0;
+    padding: 0.5vw;
+    font-size: 30px;
+    background-color: #344686;
+}
+
+.item {
+    display: flex;
+    padding-right: 40px;
+}
+
+.imagem-item {
+    min-height: 150px;
+    max-height: 100px;
+    border-radius: 15px;
 }
 
 figcaption {
-    font-size: 1vw;
+    font-size: 20px;
 }
+
+.item-projet {
+    padding: 0 25px;
+}
+
+.box{
+    max-width: 4000px;
+    min-width: 150px;
+    max-height: 4000px;
+    min-height: 40px;
+    background-color: #344686;
+    border-style: none;
+    border-radius: 10px;
+    color: #ebe6fa;
+    margin: 15px 0;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.box:hover{
+    background-color: #a6b3ff;
+    color: #07070D;
+    transform: scale(1.05);
+}
+
+/* Tabela */
 
 table {
     margin: auto;
     border-radius: 15px;
     border: 2px solid #344686;
-    width: 90%;
+    width: 80%;
     text-align: center;
     background-color: #150f2c;
-    font-size: 1vw;
+    font-size: 20px;
     overflow: hidden; 
     border-collapse: separate; 
     border-spacing: 0;
@@ -44,154 +147,59 @@ table {
 thead {
     border: 0.3vw solid black;
     background-color: #344686;
-    font-size: 1.5vw;
+    font-size: 22px;
 }
 
 th, td {
-    padding: 0.5vw;
+    padding: 5px;
     border-bottom: 1px solid #344686;
 }
 
-footer {
-    font-size: 1vw;
+/* Formulário */
+
+form {
+    margin: 20px;
+    padding: 40px;
+    background-color: #150f2c;
+    font-size: 25px;
+    border-radius: 10px;
 }
 
-ul {
-    list-style: none;
+label {
+    padding-bottom: 100px;
 }
 
-/* IDs */
-
-#fotoperfil {
-    width: 14vw;
-    border-radius: 15px;
+.input {
+    color: #E8EDFF;
+    width: 100%;
+    font-size: 20px;
+    border: none;
+    background-color: #07070D;
+    margin-bottom: 20px;
 }
 
-#nome {
-    font-size: 2.5vw;
+/* Footer */
+
+.mini-img {
+    width: 20px;
+    border-radius: 50px;
 }
 
-#links {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: auto;
-    gap: 10px;
-}
 
-/* Classes */
-
-/*  - Containers - */
-    .container {
-        background: #07070D;
-        background: linear-gradient(170deg, rgba(7, 7, 13, 1) 0%, rgba(40, 56, 116, 1) 50%, rgba(7, 7, 13, 1) 100%);
-        margin: 0 20vw 0 20vw;
-        padding: 1vw;
-    }
-    
-    .sessao{
-        margin: 2vw;
-        background-color: #07070D;
-    }
-
-    .cont-sessao {
-        padding: 2vw;
-    }
-
-/*  - Titulos - */
-    .sec-nomes {
+@media (max-width: 1250px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         text-align: center;
-        background-color: #283874;
-        margin: 0;
-        padding: 0.5vw;
-        font-size: 2vw;
-    }
-
-    .ter-nomes {
-        font-size: 1.5vw;
-    }
-
-/* - Botão - */
-    .box{
-        width: 7vw;
-        height: 5vh;
-        background-color: #344686;
-        border-style: none;
-        border-radius: 10px;
-        color: #ebe6fa;
-        cursor: pointer;
-    }
-
-    .box:hover{
-        background-color: #a6b3ff;        
-    }
-
-    .box-perf {
-        width: 300px;
-        height: 5vh;
-        padding: 0 1vw 0 1vw;
-        background-color: #344686;
-        border-style: none;
-        border-radius: 10px;
-        color: #ebe6fa;
-        cursor: pointer;
-    }
-
-    .box-perf:hover{
-        background-color: #a6b3ff;
-    }
-/* - Parágrafos - */
-    .texto {
-        font-size: 1vw;
-        text-align: justify;
-    }
-
-/* - Links - */
-
-    .link-item {
-        margin: 5px;
-        font-size: 1vw;
-        text-align: center;
-    }
-
-/* - Lista - */
-    .lista-item {
-        background-color: #150f2c;
-        text-align: center;
-        border-radius: 10px;
-        margin-bottom: 10px;
-    }
-
-    .titulo-item {
-        border-radius: 10px 10px 0 0;
-        padding: 0.5vw;
-        font-size: 1.5vw;
-        background-color: #344686;
-    }
-
-    .imagem-item {
-        height: 25vh;
-        border-radius: 15px;
     }
 
     .item {
-        display: flex;
-        padding-right: 2vw;
+        flex-direction: column;
+        padding: 0 35px;
     }
 
-    .item-projet {
-        padding: 0 1vw 3vh 1vw;
+    #info {
+        margin: 0;
     }
-
-/* - Inputs - */
-    .input {
-        color: #fff;
-        font-size: 1vw;
-        border: none;
-        background-color: #07070D;
-    }
-
-/* - Footer imagens - */
-    .mini-img {
-        width: 1vw;
-        border-radius: 50px;
-    }
+}
